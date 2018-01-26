@@ -24,6 +24,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
            <!--  nav here -->
+           <% flash.each do |key, value| %>
+             <div class="alert alert-<%= key %>"><%= value %></div>
+           <% end %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
